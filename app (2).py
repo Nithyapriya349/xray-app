@@ -13,13 +13,16 @@ def load_model():
 with st.spinner('Model is being loaded..'):
     model = load_model()
 
-st.title("Brain Scan Classification")
+st.write("""
+         # Pneumonia Identification System
+         """
+         )
 
 # Define your class names (adjust to your model's output)
-class_names = ["Normal", "Tumor"]
+#class_names = ["Normal", "Tumor"]
 
 # File uploader
-file = st.file_uploader("Please upload a brain scan file", type=["jpg", "png", "jpeg"])
+file = st.file_uploader("Please upload a chest scan file", type=["jpg", "png", "jpeg"])
 
 def import_and_predict(image_data, model):
     size = (180, 180)
