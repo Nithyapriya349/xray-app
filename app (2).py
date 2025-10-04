@@ -19,7 +19,7 @@ st.write("""
          )
 
 # Define your class names (adjust to your model's output)
-class_names = ["Normal", "Tumor"]
+class_names = ["Normal", "Pneumonia"]
 
 # File uploader
 file = st.file_uploader("Please upload a chest scan file", type=["jpg", "png", "jpeg"])
